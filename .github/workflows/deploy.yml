@@ -1,13 +1,12 @@
-name: ci 
+name: main 
 on:
   push:
     branches:
-      - master 
       - main
 permissions:
   contents: write
 jobs:
-  deploy:
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
