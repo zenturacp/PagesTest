@@ -1,8 +1,8 @@
-name: main 
+name: maskiner 
 on:
   push:
     branches:
-      - main
+      - maskiner 
 permissions:
   contents: write
 jobs:
@@ -18,5 +18,3 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
-        working-directory: ./src
